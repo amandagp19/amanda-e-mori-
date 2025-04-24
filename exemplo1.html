@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandeira da Holanda</title>
+  <style>
+    canvas {
+      border: 2px solid #000;
+      background: #ccc;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      var canvas = $("#canvas")[0];
+      var ctx = canvas.getContext("2d");
+      var holanda = canvas.height / 3;
+      ctx.fillStyle = "#AE1C28";
+      ctx.fillRect(0, 0, canvas.width, holanda);
+      ctx.fillStyle = "#FFFFFF";
+      ctx.fillRect(0, holanda, canvas.width, holanda);
+      ctx.fillStyle = "#21468B";
+      ctx.fillRect(0, 2 * holanda, canvas.width, holanda);
+    });
+  </script>
+</head>
+<body>
+  <canvas id="canvas" width="300" height="180"></canvas>
+</body>
+</html>

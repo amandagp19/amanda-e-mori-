@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandeira da Finlândia</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+      background: #fff;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <canvas id="canvas" width="300" height="180"></canvas>
+  <script>
+    $(document).ready(function() {
+    var canvas = $("#canvas")[0];
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#003580";
+    ctx.fillRect(90, 0, 30, 180);
+    ctx.fillRect(0, 70, 300, 30);
+    });
+  </script>
+</body>
+</html>
+
